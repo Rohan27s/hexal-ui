@@ -47,17 +47,17 @@ const ButtonComponentPage = () => {
                 </div>
 
                 {/* Playground with Code Preview */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid h-[80vh]  grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Playground */}
-                    <div className="bg-gray-800 p-6 rounded-md shadow-md">
+                    <div className="bg-gray-800 overflow-y-scroll p-6 rounded-md shadow-md">
                         <h2 className="text-3xl font-bold mb-4 flex items-center">
                             <FaPlay className="mr-3" /> Live Playground
                         </h2>
                         <p className="text-lg text-gray-300 mb-6">Try out the button component with different options:</p>
 
-                        {/* Separated Buttons for Users to Change */}
-                        <h3 className="text-2xl font-semibold mb-2">Default Buttons</h3>
-                        <p className="text-gray-400 mb-4">The buttons below can be adjusted using the controls on the right.</p>
+                        {/* Button Preview */}
+                        <h3 className="text-2xl font-semibold mb-2">Preview</h3>
+                        <p className="text-gray-400 mb-4">The buttons below reflect your current selection.</p>
                         <div className="flex space-x-6 mb-8">
                             <Button variant={variant} size={size} shape={shape} disabled={disabled} animate={animate}>
                                 {size === 'large' ? 'Large Button' : size === 'small' ? 'Small Button' : 'Medium Button'}
@@ -67,9 +67,7 @@ const ButtonComponentPage = () => {
                             </Button>
                         </div>
 
-                        <hr className="my-6 border-gray-600" />
-
-                        {/* Control Buttons */}
+                        {/* Variant Controls */}
                         <h3 className="text-2xl font-semibold mb-2">Button Variants</h3>
                         <p className="text-gray-400 mb-4">Choose between primary, secondary, and gradient buttons.</p>
                         <div className="flex space-x-6 mb-8">
@@ -134,10 +132,17 @@ const ButtonComponentPage = () => {
                     </div>
 
                     {/* Code Preview with Copy Button */}
-                    <div className="bg-gray-800 p-6 rounded-md shadow-md relative">
-                        <h2 className="text-3xl font-bold mb-4 flex items-center">
+                    <div className="bg-gray-800 p-6 overflow-y-scroll rounded-md shadow-md relative flex flex-col">
+                        <h2 className="text-3xl font-bold mb-8 flex items-center">
                             <FaCode className="mr-3" /> Code Preview
                         </h2>
+
+                        {/* Button Preview at the Top */}
+                        <div className="mb-6">
+                            <Button variant={variant} size={size} shape={shape} disabled={disabled} animate={animate}>
+                                {size === 'large' ? 'Large Button' : size === 'small' ? 'Small Button' : 'Medium Button'}
+                            </Button>
+                        </div>
 
                         {/* Copy Button */}
                         <button
