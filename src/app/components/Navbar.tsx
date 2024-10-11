@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React from 'react';
 
 // Reusable Button Component
@@ -18,19 +19,22 @@ const Button = ({ children, variant }: { children: React.ReactNode, variant: 'pr
 // Reusable NavLink Component with ARIA and custom focus style
 const NavLink = ({ children, href, isActive }: { children: React.ReactNode, href: string, isActive?: boolean }) => {
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        e.preventDefault(); // Prevent default anchor click behavior
-        const targetElement = document.querySelector(href); // Select the target element
+        if (href.startsWith('#')) {
+            e.preventDefault(); // Prevent default anchor click behavior for internal navigation
+            const targetElement = document.querySelector(href); // Select the target element based on ID (e.g., #section)
 
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            }
         }
+        // Otherwise, allow normal navigation for external links (like "/component-gallery")
     };
 
     return (
-        <a
+        <Link
             href={href}
             onClick={handleClick}
             className="relative group transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-900 focus:border-0" // Custom focus styles
@@ -38,16 +42,16 @@ const NavLink = ({ children, href, isActive }: { children: React.ReactNode, href
         >
             {children}
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
-        </a>
+        </Link>
     );
 };
 
 
 const Navbar = () => {
     const navLinks = [
-        { name: 'Components', href: '#components', isActive: true },
+        { name: 'Components', href: '/component-gallery', isActive: true },
         { name: 'Docs', href: '#docs' },
-        { name: 'Pricing', href: '#pricing' },
+        { name: 'Pricing', href: '/#pricing' },
         { name: 'GitHub', href: '#' },
     ];
 
@@ -55,11 +59,11 @@ const Navbar = () => {
         <header className="flex justify-between fixed top-0 z-50 w-full items-center p-6 bg-gray-900/40 backdrop-blur-lg border border-white/10 rounded-lg shadow-md">
             {/* Brand / Logo */}
             <div className="text-3xl font-extrabold tracking-tight">
-                <a href="#hero_section" aria-label="HexaUI Home" className="focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                <Link href="/" aria-label="HexaUI Home" className="focus:outline-none focus:ring-2 focus:ring-cyan-400">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500 animate-gradient-move">
                         HexaUI
                     </span>
-                </a>
+                </Link>
             </div>
 
             {/* Navigation Links */}
