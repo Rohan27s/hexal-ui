@@ -1,10 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import Playground from '../components/DetailsPageComponents/Playground';
-import CodePreview from '../components/DetailsPageComponents/CodePreview';
-import PropsTable from '../components/DetailsPageComponents/PropsTable';
-import PageSection from '../components/DetailsPageComponents/PageSection';
-import HeadingSection from '../components/DetailsPageComponents/HeadingSection';
+import Playground from '../../../components/DetailsPageComponents/Playground';
+import CodePreview from '../../../components/DetailsPageComponents/CodePreview';
+import PropsTable from '../../../components/DetailsPageComponents/PropsTable';
+import HeadingSection from '../../../components/DetailsPageComponents/HeadingSection';
 
 const ButtonComponentPage = () => {
     const [variant, setVariant] = useState<'primary' | 'secondary' | 'gradient'>('primary');

@@ -1,6 +1,6 @@
 {
-  "name": "hexa-ui",
-  "version": "0.1.0",
+  "name": "hexal-ui",
+ "version": "0.1.2",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+     "publish-package": "npm publish"
   },
   "dependencies": {
     "framer-motion": "^11.11.7",
@@ -35,11 +36,11 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.6.3"
   },
-  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
-  "main": "src/app/components/index.ts",
+  "description": "HexaUI is a modern, flexible, and highly customizable UI component library for React, designed to help developers quickly build responsive and scalable web applications. Built with a focus on modularity, HexaUI provides a wide range of pre-designed, reusable components that are easy to integrate and customize to match your project’s design system.",
+  "main": "components/ModuleComponents/index.ts",
   "repository": {
     "type": "git",
-    "url": "hexa-ui"
+    "url": "hexal-ui"
   },
   "keywords": [
     "hexal-ui"

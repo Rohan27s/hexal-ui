@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../ButtonComponents/Button';
+import Button from '../ModuleComponents/ButtonComponents/Button';
 import { FaShoppingCart } from 'react-icons/fa';
 
 const Playground = ({ variant, size, shape, disabled, animate, setVariant, setSize, setShape, setDisabled, setAnimate }: any) => (
