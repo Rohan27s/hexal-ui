@@ -1,5 +1,7 @@
-node_modules/
-src/
-.git/
-.storybook/
-dist/ # Optional if you don’t want to ship the raw source code
+.git
+node_modules
+.next
+.storybook
+pages
+public
+*.test.*

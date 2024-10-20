@@ -45,6 +45,10 @@
   "keywords": [
     "hexal-ui"
   ],
+  "files": [
+  "components/ModuleComponents",
+  "dist"
+],
   "author": "Rohan Gotwal",
   "license": "ISC"
 }
