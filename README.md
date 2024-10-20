@@ -1,6 +1,6 @@
-# HexaUI
+# HexalUI
 
-**HexaUI** is a modular and customizable UI component library built for React. With a wide range of pre-built, reusable components, HexaUI makes it easy to build modern, responsive user interfaces without sacrificing flexibility.
+**HexalUI** is a modular and customizable UI component library built for React. With a wide range of pre-built, reusable components, HexalUI makes it easy to build modern, responsive user interfaces without sacrificing flexibility.
 
 ## Features
 
@@ -12,7 +12,7 @@
 
 ## Installation
 
-You can install HexaUI via npm:
+You can install HexalUI via npm:
 
 ```bash
 npm install hexal-ui
@@ -26,7 +26,7 @@ yarn add hexal-ui
 
 ## Usage
 
-HexaUI components are easy to integrate into your React project. Here’s a quick example of how to use the `Button` component.
+HexalUI components are easy to integrate into your React project. Here’s a quick example of how to use the `Button` component.
 
 ### Example: Using the Button Component
 

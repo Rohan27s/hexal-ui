@@ -61,7 +61,7 @@ const Packages = () => {
 
             <div className="relative z-10 max-w-7xl mx-auto">
                 <h2 className="text-center text-5xl font-bold tracking-wide mb-8 text-gray-100">Choose Your Plan</h2>
-                <p className="text-center text-lg text-gray-300 mb-12">Unlock the full potential of HexaUI</p>
+                <p className="text-center text-lg text-gray-300 mb-12">Unlock the full potential of HexalUI</p>
 
                 {/* Billing Cycle Toggle */}
                 <div className="flex justify-center mb-12 relative">

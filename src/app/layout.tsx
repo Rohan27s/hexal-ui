@@ -5,7 +5,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export const metadata = {
-  title: 'HexaUI - Component Library',
+  title: 'HexalUI - Component Library',
   description: 'A scalable, customizable component library for modern web applications.',
 };
 

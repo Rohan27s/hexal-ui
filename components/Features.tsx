@@ -15,7 +15,7 @@ const Features = () => {
                         </h3>
                     </div>
                     <p className="text-gray-400 leading-relaxed">
-                        HexaUI offers a wide range of fully customizable, reusable components to speed up your development.
+                        HexalUI offers a wide range of fully customizable, reusable components to speed up your development.
                     </p>
                 </div>
 
@@ -27,7 +27,7 @@ const Features = () => {
                         </h3>
                     </div>
                     <p className="text-gray-400 leading-relaxed">
-                        Built for performance, HexaUI minimizes bundle size while ensuring fast load times.
+                        Built for performance, HexalUI minimizes bundle size while ensuring fast load times.
                     </p>
                 </div>
 

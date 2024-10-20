@@ -58,11 +58,11 @@ const Hero = () => {
                     </span>
                     <br /> with{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500 animate-gradient-move">
-                        HexaUI
+                        HexalUI
                     </span>
                 </h1>
                 <p className="text-lg sm:text-xl text-gray-300 mb-12">
-                    HexaUI is a complete, modular, and customizable component library for rapidly
+                    HexalUI is a complete, modular, and customizable component library for rapidly
                     building modern, efficient web applications.
                 </p>
 

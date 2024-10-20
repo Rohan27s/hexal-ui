@@ -23,7 +23,7 @@ const Footer = () => {
                 <p className="mb-8 text-3xl font-bold tracking-wide leading-relaxed">
                     Ready to start building faster? <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500">
-                        Join HexaUI today.
+                        Join HexalUI today.
                     </span>
                 </p>
 
@@ -43,7 +43,7 @@ const Footer = () => {
 
                 {/* Footer Text */}
                 <p className="text-sm text-gray-400">
-                    &copy; {new Date().getFullYear()} HexaUI. All rights reserved.
+                    &copy; {new Date().getFullYear()} HexalUI. All rights reserved.
                 </p>
             </div>
         </footer>

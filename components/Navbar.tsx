@@ -59,9 +59,9 @@ const Navbar = () => {
         <header className="flex justify-between fixed top-0 z-50 w-full items-center p-6 bg-gray-900/40 backdrop-blur-lg border border-white/10 rounded-lg shadow-md">
             {/* Brand / Logo */}
             <div className="text-3xl font-extrabold tracking-tight">
-                <Link href="/" aria-label="HexaUI Home" className="focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                <Link href="/" aria-label="HexalUI Home" className="focus:outline-none focus:ring-2 focus:ring-cyan-400">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-500 animate-gradient-move">
-                        HexaUI
+                        HexalUI
                     </span>
                 </Link>
             </div>
