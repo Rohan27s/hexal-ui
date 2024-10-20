@@ -1,1 +1,1 @@
-export { default as Button } from './ModuleComponents/ButtonComponents/Button';
+export { default as Button } from './ButtonComponents/Button';
