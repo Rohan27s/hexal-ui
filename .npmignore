@@ -1,0 +1,5 @@
+node_modules/
+src/
+.git/
+.storybook/
+dist/ # Optional if you don’t want to ship the raw source code

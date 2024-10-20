@@ -1,4 +1,3 @@
-// components/PageSection.tsx
 import React from 'react';
 
 interface PageSectionProps {

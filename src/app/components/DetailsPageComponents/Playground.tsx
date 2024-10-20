@@ -1,4 +1,3 @@
-// components/Playground.tsx
 import React from 'react';
 import Button from '../ButtonComponents/Button';
 import { FaShoppingCart } from 'react-icons/fa';
