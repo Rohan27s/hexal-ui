@@ -1,0 +1,94 @@
+/* Button.css */
+
+/* Base Styles */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.button:focus {
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.4);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Variant Styles */
+.button-primary {
+    background: linear-gradient(to right, #38b2ac, #00bcd4);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-primary:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-secondary {
+    border: 2px solid #00bcd4;
+    color: white;
+    background-color: transparent;
+}
+
+.button-secondary:hover {
+    background-color: #555;
+    border-color: #444;
+}
+
+.button-gradient {
+    background: linear-gradient(to right, #ec4899, #8b5cf6, #6366f1);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-gradient:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Size Styles */
+.button-small {
+    font-size: 0.875rem;
+    padding: 4px 8px;
+}
+
+.button-medium {
+    font-size: 1rem;
+    padding: 8px 16px;
+}
+
+.button-large {
+    font-size: 1.25rem;
+    padding: 12px 24px;
+}
+
+/* Shape Styles */
+.button-rounded {
+    border-radius: 0.5rem;
+}
+
+.button-pill {
+    border-radius: 9999px;
+}
+
+.button-square {
+    border-radius: 0;
+}
+
+/* Animation */
+.button-animate:hover {
+    transform: scale(1.05) translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+.icon {
+    margin-right: 8px;
+}

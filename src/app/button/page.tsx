@@ -19,7 +19,7 @@ const ButtonComponentPage = () => {
         const shapeCode = `shape="${shape}"`;
         const disabledCode = disabled ? `disabled={true}` : '';
         const animateCode = animate ? `animate={true}` : '';
-        return `<Button ${variantCode} ${sizeCode} ${shapeCode} ${disabledCode} ${animateCode}><FaShoppingCart /></Button>`;
+        return `<Button ${variantCode} ${sizeCode} ${shapeCode} ${disabledCode} ${animateCode}>Some Text</Button>`;
     };
 
     const handleCopyCode = () => {
@@ -35,6 +35,7 @@ const ButtonComponentPage = () => {
         { prop: 'icon', type: 'ReactNode', description: 'Optional icon to be displayed inside the button.' },
         { prop: 'disabled', type: 'boolean', description: 'Disables the button.' },
         { prop: 'onClick', type: '() => void', description: 'Callback function when button is clicked.' },
+        { prop: 'className', type: 'string', description: 'Custom CSS class to apply additional styles.' }, // Added className prop
     ];
 
     return (
